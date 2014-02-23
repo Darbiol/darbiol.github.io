@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Todo App</title>
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+<!-- <script type="text/javascript" src="js/knockout.min.js"></script> -->
+
+</head>
+
+<body>
+	
+
+<div id="container">
+	<h1 class="titleHeader">Todo List</h1>
+	<div id="todoItemDiv"><label id="todo"><input type="checkbox" data-bind="click: finishAll"></label><input type="text" id="addTodo" placeholder="Write your todo list" data-bind="event{keypress: addTodo}"></div>
+	<ul id="todoList" data-bind="foreach: entries">
+		<li><div id="todoItem"><label id="todo"><input type="checkbox" data-bind="event{click:$root.finished}"></label><span class="" data-bind="text: todoEntry"></span><a href='#' data-bind="click: $root.deleteTodoItem">X</a></div></li>
+	</ul>
+</div>
+<script type="text/javascript" src="js/knockout.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
