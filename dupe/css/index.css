@@ -1,0 +1,360 @@
+*{
+	margin : 0;
+	border : 0;
+	padding : 0;
+}
+
+body {
+	font-family : Arial, sans-serif;
+}
+
+a {
+	color : #FF4719;
+	text-decoration: none;
+}
+
+/* HEADER*/
+header{
+	height : 100px;
+	position : relative;
+	padding : 15px;
+	box-shadow: 1px 2px 10px #AAAAAA;
+}
+
+main {
+	padding : 15px;
+}
+
+#logo {
+	float:left;
+}
+
+.selected>a {
+	color : #FF4719 !important;
+}
+.column {
+	height : 400px;
+	position : relative;
+	padding-top : 15px;
+}
+.column-last{
+	height : 370px;
+	position : relative;
+	padding-top: 10px;
+}
+
+.row {
+	float : left;
+	height : 100%;
+	width : 30%;
+	margin-right: 30px;
+}
+
+.row-header{
+	padding-top: 10px;
+	height : 200px;
+}
+.row-header > h4 {
+	text-align: center;
+	color : #FF4719;
+	font-size: 14px;
+	font-family : impact, Arial, sans-serif;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+.row-header > h2 {
+	font-size: 40px;
+	text-align: center;
+	font-family : "Arial Narrow", Arial, sans-serif;
+	font-weight: 100;
+}
+.row-header > p {
+	font-size: 12px;
+	font-family: Helvetica, Arial, verdana;
+	text-align: center;
+	color : #C1C1C1;
+	padding : 3px;
+}
+
+.row-content {
+	height: 200px;
+}
+
+.row > a:hover {
+	opacity : 0.7;
+}
+.row-content > a:hover {
+	opacity : 0.7;
+}
+
+#account-nav {
+	float: right;
+	margin-top : 7px;
+	display : block;
+}
+
+#account-nav li {
+	display: inline-block;
+	padding-left : 0.6em;
+}
+
+#search {
+	float: right;
+}
+
+#main-nav {
+	float : right;
+	display : block;
+	text-align: right;
+}
+
+#main-nav li {
+	display: inline-block;
+	padding : 1em;
+}
+
+#main-nav li > a{
+	color : #000;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.container {
+	width : 960px;
+	margin : 0 auto;
+}
+
+#account-nav > li > a {
+	color : #6A6A6A;
+	font-family: tahoma;
+	font-size: 12px;
+}
+#account-nav > li > a:hover {
+	color : #FF4719;
+}
+#main-nav >li >a:hover{
+	color : #FF4719;
+}
+/* ====== SLIDER ========*/
+
+#slider {
+	position : relative;
+	height : 520px;
+}
+#slider img {
+	position : absolute;
+}
+#slider-next{
+	list-style: none;
+	display : inline-block;
+	float : right;
+	margin-right : 50px;
+	margin-top : 230px;
+}
+
+#slider-next > a > img{
+	opacity : 0.6;
+}
+#slider-next > a > img:hover{
+	opacity : 1;
+}
+#slider-previous{
+	list-style: none;
+	display : inline-block;
+	float : left;
+	margin-top : 230px;
+}
+#slider-previous > a > img{
+	opacity : 0.6;
+}
+#slider-previous > a > img:hover{
+	opacity : 1;
+}
+#image-list{
+	list-style: none;
+}
+
+.image-container img {
+	z-index : -1;
+}
+
+.overlay{
+	background-color: #000;
+	height : 200px;
+	width : 600px;
+	opacity : 0.3;
+	position : absolute;
+	margin-top : 130px;
+	margin-left: 180px;
+}
+.overlay-text{
+	position : absolute;
+	height : 200px;
+	width : 600px;
+	border : 2px solid #fff;
+	margin-top : 130px;
+	margin-left: 180px;
+}
+.overlay-text h1 {
+	color : #fff;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size : 70px;
+	margin-top : 20px;
+	text-align: center;
+}
+.overlay-text p {
+	color : #fff;
+	text-align: center;
+	margin: 10px 30px;
+}
+
+.image-container a{
+	color : #fff;
+	background-color:  #FF4719;
+	padding: 15px 20px;
+	float : left;
+	position : absolute;
+	margin : 310px 400px;
+}
+
+.hide {
+	display : none;
+}
+.active {
+	display : block;
+	visibility: visible;
+}
+/*========== SLIDER ===========*/
+#latest-deals {
+	width : 100%;
+	height : 100px;
+	border : 3px solid #5C5C5C;
+	background: url('https://catmagnet.com/assets/img/cm_newsletter_footer_img.jpg') no-repeat 370px 0;
+	margin-top: 15px;
+}
+.col-1 {
+	float : left;
+	height : 100%;
+	width : 10%;
+}
+.col-2{
+	float : left;
+	height : 100%;
+	width : 20%;
+}
+.col-3{
+	float : left;
+	height : 100%;
+	width : 30%;
+}
+.col-4{
+	float : left;
+	height : 100%;
+	width : 36%;
+}
+.col-30{
+	float : left;
+	height : 100%;
+	width : 37%;
+}
+#news-letter1 {
+	font-size : 22px;
+	font-family : "Arial Narrow", Arial, sans-serif;
+	font-weight: 200px;
+	padding : 18px 8px;
+}
+#news-letter1 > p > span {
+	color : #FF4719;
+}
+#news-letter3{
+	font-family: impact, sans-serif;
+	font-weight: 100;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+#news-letter3 > a{
+	margin-top : 30px;
+	float: left;
+	color : #fff;
+	background-color : #FF4719;
+	padding : 5px;
+}
+
+#news-letter3 > a:hover{
+	color : #fff;
+	background-color : #4A4A4A;
+}
+
+#news-letter3 > span{
+	width : 100%;
+
+}
+
+#bolt{
+	margin-top : 10px;
+	background: url('https://catmagnet.com/assets/img/lightning-bolt-line.png') repeat-x center;
+}
+#bolt > p > img {
+	padding : 3px;
+	background-color : #fff;
+	margin : 0 auto;
+}
+
+.navigation-lower{
+	display : inline-block;
+	list-style: none;
+	padding : 8px;
+}
+.navigation-lower li{
+	padding : 0.5em;
+}
+.navigation-lower li  a{
+	color : #6E6E6E;
+	font-family: Verdana;
+	font-size: 14px;
+}
+
+#social {
+	float : left;
+	margin-top: 30px;
+	border-right: 1px solid #424242;
+	width : 60%;
+}
+#cash{
+	float:left;
+	margin-top: 30px;
+	margin-left: 60px;
+}
+#cash>p{
+	padding : 10px 0;
+	text-align: center;
+	font-family : impact, Arial, sans-serif;
+	color : #BABABA;
+	font-weight: bold;
+	font-size: 30px;
+	border-bottom: 2px solid #000;
+	border-top: 2px solid #000;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+#cash img{
+	margin-top : 15px;
+}
+/* =====  FOOTER  =====*/
+footer {
+	border-top: solid 2px #000;
+	background-color: #2F2F2F;
+	height: 90px;
+}
+
+footer > p {
+	margin-top : 20px;
+	color : #fff;
+	text-align: center;
+	font-size : 12px;
+}
+
+footer > p:nth-child(2) {
+	font-size: 13px;
+}
+
