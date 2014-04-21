@@ -79,7 +79,14 @@ main {
 .row-content {
 	height: 200px;
 }
-
+.row > a {
+	transition-property : opacity;
+	transition-duration : 0.5s;
+}
+.row-content > a {
+	transition-property : opacity;
+	transition-duration : 0.5s;
+}
 .row > a:hover {
 	opacity : 0.7;
 }
