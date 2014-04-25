@@ -1,0 +1,105 @@
+* {
+	padding : 0px;
+	margin : 0px;
+	border : 0px;
+}
+
+body {
+	font-family : Arial, sans-serif;
+}
+/* =========   HEADER   ==========*/
+header#header {
+	background-color: #8AE62E;
+	height : 70px;
+}
+
+#header > h1{
+	color : #FFF;
+	display: inline-block;
+	padding : 15px;
+	float : left;
+}
+
+#header > input {
+	height : 35px;
+	width : 900px;
+	float : left;
+	margin-top : 12px;
+	padding : 5px;
+	padding-left: 10px;
+	font-size: 20px;
+}
+
+#header > button {
+	height : 40px;
+	width : 40px;
+	font-size: 18px;
+	margin : 14px 10px;
+	border-radius: 5px;
+	background-color : #7519D1;
+	color : #FFF;
+	font-weight: bold;
+}
+
+#header > button:active {
+	background-color :#FFF;
+	color :  #7519D1;
+}
+
+/* =========  FOOTER  ==========*/
+footer#footer {
+	width : 100%;
+	margin : 0 auto;
+	text-align: center;
+	border-top: 1px solid #B0B0B0;
+	color : #959595;
+	padding-top : 15px;
+}
+
+/*  =========   CONTENTS  ========*/
+main#contents{
+	position: relative;
+	overflow: auto;
+}
+#frame1, #frame2{
+	display : inline-block;
+	float : left;
+	height : 700px;
+}
+
+#frame1 {
+	width : 380px;
+}
+
+#frame2{
+	width : 650px;
+}
+
+#frame3{
+	width : 1030px;
+	display : inline-block;
+	float : left;
+	height : 720px;
+	margin : 0 auto;
+}
+
+/* ==== GLOBALS STYLES ====*/
+.container {
+	width : 1100px;
+	margin: 0 auto;
+}
+
+.frame-header {
+	font-family: impact, Arial, sans-serif;
+	padding : 5px 10px;
+}
+
+.iframe-contents{
+	margin : 15px 30px;
+}
+
+.iframe-contents-last{
+	margin : 15px 60px;
+}
+
+
