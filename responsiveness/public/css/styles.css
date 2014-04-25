@@ -30,26 +30,35 @@ header#header {
 	font-size: 20px;
 }
 
-#header > button {
+#goto-website {
 	height : 40px;
 	width : 40px;
-	font-size: 18px;
-	margin : 14px 10px;
-	border-radius: 5px;
 	background-color : #7519D1;
 	color : #FFF;
-	font-weight: bold;
 }
 
-#header > button:active {
+#goto-website:active {
 	background-color :#FFF;
 	color :  #7519D1;
+}
+
+#refresh-website {
+	height : 40px;
+	width : 80px;
+	background-color :#FFF;
+	color :  #7519D1;
+}
+
+#refresh-website:active {
+	background-color : #7519D1;
+	color : #FFF;
 }
 
 /* =========  FOOTER  ==========*/
 footer#footer {
 	width : 100%;
 	margin : 0 auto;
+	height : 70px;
 	text-align: center;
 	border-top: 1px solid #B0B0B0;
 	color : #959595;
@@ -102,4 +111,10 @@ main#contents{
 	margin : 15px 60px;
 }
 
+.btn {
+	font-size: 18px;
+	margin : 14px 8px;
+	border-radius: 5px;
+	font-weight: bold;
+}
 

@@ -9,27 +9,28 @@
 <body>
 	<header id="header" class="">
 			<h1>Enter Your Website: </h1>
-			<input type="text" id="website-to-visit" placeholder="Type your Website to test here">
-			<button>Go</button>
+			<input type="text" value="http://darbiol.github.io/todo" id="website-to-visit" placeholder="Type your Website to test here">
+			<button id="goto-website" class='btn'>Go</button>
+			<button id="refresh-website" class='btn'>Refresh</button>
 	</header>
 
 	<div class="container">
 		<main id="contents">
 			<div id="frame1">
 				<h1 class="frame-header"> View Port : 320 </h1>
-				<iframe class="iframe-contents" src="http://darbiol.github.io/todo" width='320' height='600'>
+				<iframe class="iframe-contents iframe" src="http://darbiol.github.io/todo" width='320' height='600'>
 				  	<p>Your browser does not support iframes.</p>
 				</iframe>
 			</div>
 			<div id="frame2">
 				<h1 class="frame-header"> View Port : 584 </h1>
-				<iframe class="iframe-contents" src="http://darbiol.github.io/todo" width='584' height='600'>
+				<iframe class="iframe-contents iframe" src="http://darbiol.github.io/todo" width='584' height='600'>
 				  	<p>Your browser does not support iframes.</p>
 				</iframe>
 			</div>
 			<div id="frame3">
 				<h1 class="frame-header"> View Port : 892 </h1>
-				<iframe class="iframe-contents-last" src="http://darbiol.github.io/todo" width='892' height='600'>
+				<iframe class="iframe-contents-last iframe" src="http://darbiol.github.io/todo" width='892' height='600'>
 				  	<p>Your browser does not support iframes.</p>
 				</iframe>
 			</div>
@@ -40,7 +41,7 @@
 	<footer id="footer">
 		Copyright &copy; 2014 ChineseBear Solutions Inc. All rights reserved.
 	</footer>
-	<script src="public/js/jquery.js" type="text/javascript" charset="utf-8" async defer></script>
-	<script src="public/js/scripts.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="public/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="public/js/scripts.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
