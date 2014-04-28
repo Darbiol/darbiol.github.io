@@ -3,10 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Responsive Test v.1.0.0</title>
+	<title>Responsive Test v.1.2.1</title>
 	<link rel="stylesheet" href="public/css/styles.css">
 </head>
 <body>
+	<div id="help-popup" class="hide">
+
+		<div id="help-display">
+			<a href="#" id="close-popup">X</a>
+			<h1>How To:</h1>
+			<p></p>
+		</div>
+		<div id="overlay">
+		</div>
+	</div>
+
 	<header id="header" class="">
 			<h1 >Enter Your Website: </h1>
 			<input type="text" value="http://darbiol.github.io/todo" id="website-to-visit" placeholder="Type your Website to test here">
@@ -24,8 +35,12 @@
 			<li data-res="640x960" class="nav-link"><a href='#'>640 x 960</a></li>
 			<li data-res="1136x640" class="nav-link"><a href='#'>1136 x 640</a></li>
 			<li data-res="768x1024" class="nav-link"><a href='#'>768 x 1024</a></li>
-			<li data-res="null" class="nav-link"><a href='#'><input type="text"> x <input type="text"></a></li>
-			<li data-res="null" class="nav-link"><a href='#'>Help</a></li>
+			<li data-res="custom" class="nav-link">
+				<a href='#'>
+					<input id="viewPortW" type="text" value="320"> x <input id="viewPortH" type="text" value="240">
+				</a>
+			</li>
+			<li data-res="help" class="nav-link"><a href='#'>Help</a></li>
 		</ul>
 	</header>
 	<div class="container">

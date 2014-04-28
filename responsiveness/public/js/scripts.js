@@ -26,7 +26,9 @@ $( document ).ready( function(){
 		var currentHeight = resolution[1];
 		var currentWidth = resolution[0];
 		$( '#frame1' ).find( 'h1' ).children().html( currentHeight+' x '+currentWidth );
-		$( '#frame1' ).find( 'h1' ).attr( 'data-res', currentHeight+'x'+currentWidth  )
+		$( '#frame1' ).find( 'h1' ).attr( 'data-res', currentHeight+'x'+currentWidth  );
+		$( '#viewPortW' ).val( currentWidth );
+		$( '#viewPortH' ).val( currentHeight );
 		$( '#frame1' ).find( 'iframe' ).animate({
 			width : currentHeight,
 			height : currentWidth
@@ -36,17 +38,32 @@ $( document ).ready( function(){
 // =========================  Contents Behavior ====================
 
 	$( 'li' ).click( function(){
-		$( this ).siblings().children().removeClass( 'selected' );
-		$( this ).children().addClass( 'selected' );
-		var resolution = $( this ).attr( 'data-res' ).split( 'x' );
-		var currentHeight = resolution[1];
-		var currentWidth = resolution[0];
-		$( '#frame1' ).find( 'h1' ).children().html( currentWidth+' x '+currentHeight );
-		$( '#frame1' ).find( 'h1' ).attr( 'data-res', currentWidth+'x'+currentHeight  )
-		$( '#frame1' ).find( 'iframe' ).animate({
-			width : currentWidth,
-			height : currentHeight
-		});
+		if( $( this ).attr( 'data-res' ) == 'help' ){
+			console.log('help');
+			$( '#help-popup' ).show();
+		}else if( $( this ).attr( 'data-res' ) == 'custom' ){
+			$( this ).siblings().children().removeClass( 'selected' );
+			$( this ).children().addClass( 'selected' );
+		}else{
+			$( this ).siblings().children().removeClass( 'selected' );
+			$( this ).children().addClass( 'selected' );
+			var resolution = $( this ).attr( 'data-res' ).split( 'x' );
+			var currentHeight = resolution[1];
+			var currentWidth = resolution[0];
+			$( '#frame1' ).find( 'h1' ).children().html( currentWidth+' x '+currentHeight );
+			$( '#viewPortW' ).val( currentWidth );
+			$( '#viewPortH' ).val( currentHeight );
+			$( '#frame1' ).find( 'h1' ).attr( 'data-res', currentWidth+'x'+currentHeight  )
+			$( '#frame1' ).find( 'iframe' ).animate({
+				width : currentWidth,
+				height : currentHeight
+			});
+		}
 	} );
+
+	$( '#close-popup' ).click( function(){
+		$( '#help-popup' ).hide();
+	} );
+
 
 } );

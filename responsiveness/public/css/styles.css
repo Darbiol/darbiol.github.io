@@ -81,8 +81,9 @@ header#header {
 
 #res-nav li input{
 	width : 70px;
-	height : 25px;
-	font-size: 18px;
+	height : 17px;
+	font-size: 16px;
+	padding : 3px;
 }
 /*========  HEADER2= ==========*/
 
@@ -160,4 +161,50 @@ a {
 
 .nav-link{
 	height : 50px;
+}
+.hide{
+	display : none;
+}
+
+/* ==========   OVERLAY  ================*/
+#overlay {
+	display : block;
+	position: absolute;
+	float: left;
+	height : 100%;
+	width : 100%;
+	background-color: #000;
+	opacity: 0.6;
+	z-index: 0;
+}
+
+#help-display {
+	float: left;
+	position : absolute;
+	margin-left : 450px;
+	margin-top: 100px;
+	width : 500px;
+	height : 500px;
+	background-color: #fff;
+	z-index: 1;
+}
+#help-display h1{
+	padding: 20px 0px;
+	text-align: center;
+	background-color: #8AE62E;
+	color : #FFF;
+}
+#help-display a{
+	float : right;
+	margin: 4px 4px;
+	padding : 6px 10px;
+	background-color: #FFF;
+	color : #7519D1;
+	border-radius: 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+#help-display a:hover{
+	background-color: #7519D1;
+	color : #FFF;
 }
