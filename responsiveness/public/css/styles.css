@@ -22,7 +22,7 @@ header#header {
 
 #header > input {
 	height : 35px;
-	width : 900px;
+	width : 700px;
 	float : left;
 	margin-top : 12px;
 	padding : 5px;
@@ -54,6 +54,38 @@ header#header {
 	color : #FFF;
 }
 
+/*========  HEADER2= ==========*/
+#resolutions {
+	background-color: #8AE62E;
+}
+#res-nav{
+	list-style: none;
+	height: 50px;
+	width : 1000px;
+	margin : 0 auto;
+}
+#res-nav li{
+	display : inline-block;
+	margin : 0px;
+	/*height : 50px;*/
+}
+#res-nav li a {
+	display : block;
+	padding : 13px;
+}
+
+#res-nav li a:hover{
+	background-color: #CCFF66;
+	color : #7519D1;
+}
+
+#res-nav li input{
+	width : 70px;
+	height : 25px;
+	font-size: 18px;
+}
+/*========  HEADER2= ==========*/
+
 /* =========  FOOTER  ==========*/
 footer#footer {
 	width : 100%;
@@ -66,35 +98,15 @@ footer#footer {
 }
 
 /*  =========   CONTENTS  ========*/
-main#contents{
-	position: relative;
-	overflow: auto;
+#frame1 > iframe{
+	height : 280px;
+	width : 320px;
 }
-#frame1, #frame2{
-	display : inline-block;
-	float : left;
-	height : 700px;
-}
-
-#frame1 {
-	width : 380px;
-}
-
-#frame2{
-	width : 650px;
-}
-
-#frame3{
-	width : 1030px;
-	display : inline-block;
-	float : left;
-	height : 720px;
-	margin : 0 auto;
-}
+/*  =========   CONTENTS  ========*/
 
 /* ==== GLOBALS STYLES ====*/
 .container {
-	width : 1100px;
+	width : 1300px;
 	margin: 0 auto;
 }
 
@@ -107,14 +119,45 @@ main#contents{
 	margin : 15px 30px;
 }
 
-.iframe-contents-last{
-	margin : 15px 60px;
-}
-
 .btn {
 	font-size: 18px;
-	margin : 14px 8px;
+	margin-left : 8px;
+	margin-top : 14px;
 	border-radius: 5px;
 	font-weight: bold;
 }
 
+
+.btn-primary{
+	height : 40px;
+	background-color :#FFF;
+	color :  #7519D1;
+	padding : 5px;
+}
+
+.btn-primary:active{
+	background-color : #7519D1;
+	color :  #FFF;
+}
+
+.thick {
+	font-weight: 900;
+}
+
+.frame:hover{
+	background-color: #CCFF66;
+}
+
+.selected{
+	background-color: #CCFF66;
+	color : #7519D1;
+	font-weight: bold;
+}
+a {
+	color : #FFF;
+	text-decoration: none;
+}
+
+.nav-link{
+	height : 50px;
+}

@@ -8,29 +8,31 @@
 </head>
 <body>
 	<header id="header" class="">
-			<h1>Enter Your Website: </h1>
+			<h1 >Enter Your Website: </h1>
 			<input type="text" value="http://darbiol.github.io/todo" id="website-to-visit" placeholder="Type your Website to test here">
 			<button id="goto-website" class='btn'>Go</button>
+			<!-- <button id="back" class='btn btn-primary'>&#9664;</button>
+			<button id="forward" class='btn btn-primary thick'>&#9654;</button> -->
 			<button id="refresh-website" class='btn'>Refresh</button>
+			<button id="rotate-website" class='btn btn-primary'>Rotate</button>
 	</header>
-
+	<header id="resolutions">
+		<ul id="res-nav">
+			<li data-res="320x240" class="nav-link"><a href='#' class="selected" >320 x 240</a></li>
+			<li data-res="640x480" class="nav-link"><a href='#'>640 x 480</a></li>
+			<li data-res="600x800" class="nav-link"><a href='#'>600 x 800</a></li>
+			<li data-res="640x960" class="nav-link"><a href='#'>640 x 960</a></li>
+			<li data-res="1136x640" class="nav-link"><a href='#'>1136 x 640</a></li>
+			<li data-res="768x1024" class="nav-link"><a href='#'>768 x 1024</a></li>
+			<li data-res="null" class="nav-link"><a href='#'><input type="text"> x <input type="text"></a></li>
+			<li data-res="null" class="nav-link"><a href='#'>Help</a></li>
+		</ul>
+	</header>
 	<div class="container">
 		<main id="contents">
 			<div id="frame1">
-				<h1 class="frame-header"> View Port : 320 </h1>
-				<iframe class="iframe-contents iframe" src="http://darbiol.github.io/todo" width='320' height='600'>
-				  	<p>Your browser does not support iframes.</p>
-				</iframe>
-			</div>
-			<div id="frame2">
-				<h1 class="frame-header"> View Port : 584 </h1>
-				<iframe class="iframe-contents iframe" src="http://darbiol.github.io/todo" width='584' height='600'>
-				  	<p>Your browser does not support iframes.</p>
-				</iframe>
-			</div>
-			<div id="frame3">
-				<h1 class="frame-header"> View Port : 892 </h1>
-				<iframe class="iframe-contents-last iframe" src="http://darbiol.github.io/todo" width='892' height='600'>
+				<h1 data-res="320x240" class="frame-header"> View Port : <span>320 x 240</span></h1>
+				<iframe class="iframe-contents iframe" src="http://darbiol.github.io/todo" width='320' height='240'>
 				  	<p>Your browser does not support iframes.</p>
 				</iframe>
 			</div>
