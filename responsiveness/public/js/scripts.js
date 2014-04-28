@@ -32,6 +32,7 @@ $( document ).ready( function(){
 		});
 		//console.log(resolution);
 	} );
+
 // =========================  Contents Behavior ====================
 
 	$( 'li' ).click( function(){
