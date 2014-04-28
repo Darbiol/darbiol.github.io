@@ -12,13 +12,10 @@ $( document ).ready( function(){
 
 	$( '#refresh-website' ).click( function(){
 		//window.location.reload();
-		if( $( '#contents' ).find( 'div.selected' ).length > 0){
-			$( '#contents' ).find( 'div.selected' ).each( function(){
-				var iframe = $(this).find('iframe');
-				iframe.attr( 'src', iframe.attr( 'src' ) );
+			$( '#frame1' ).find( 'iframe' ).each( function(){
+				$( this ).attr( 'src', $( this ).attr( 'src' ) );
 			} );
-		}else{
-		}
+
 	} );
 
 	$( '#rotate-website' ).click( function(){

@@ -194,6 +194,14 @@ a {
 	background-color: #8AE62E;
 	color : #FFF;
 }
+
+#help-display ul {
+	margin : 20px 40px;
+}
+
+#help-display ul li{
+	padding : 10px 0px;
+}
 #help-display a{
 	float : right;
 	margin: 4px 4px;
