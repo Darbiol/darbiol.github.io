@@ -21,10 +21,14 @@ nav {
 	min-height: 50px;
 	margin-bottom: 20px;
 	width : 100%;
+	max-height: 80px;
 }
 .navbar-brand {
 	padding     : 5px 45px;
 	line-height : 58px;
+}
+.navbar-brand:hover {
+	text-decoration : none;
 }
 
 .navbar-nuat {
@@ -61,6 +65,7 @@ nav {
 .row {
 	margin   : 0px;
 	position : absolute;
+	padding  : 20px 25px; 
 }
 
 
@@ -69,14 +74,18 @@ nav {
 }
 
 .main-container {
-	margin-top: 20px;
-	position : relative;
-
+	margin-top : 20px;
+	position   : relative;
+	
 }
 
 .fb-container {
 	padding  : 15px;
 	color    : #FFF;
+}
+
+.fb-container>h2 {
+	color      : darkblue;
 }
 
 .accept-wrapper {
@@ -148,7 +157,8 @@ a:hover {
 
 .overlay.fade.in{
 	opacity: 0.7 !important;
-    height: 100% !important;
+    height: 120%!important;
+    margin-top : -80px;
 }
 .fade.in {
 	    opacity: 1 !important;
@@ -161,6 +171,11 @@ a:hover {
 		margin-top : 10px;
 
 		
+	}
+
+	.navbar-brand {
+		padding     : 5px 35px;
+		line-height : 58px;
 	}
 
 	.fb-container {
@@ -182,6 +197,23 @@ a:hover {
 			
 		}
 
+	}
+
+	.logo-header {
+		font-family  : Arial;
+		font-weight  : 900;
+		color        : #F5FF00;
+		font-size    : 20px !important; 	  
+	}
+
+	.logo-sub {
+		color        : #FFF;
+		font-family  : Times New Roman;
+		font-weight  : 600;
+		padding-left : 64px;
+		line-height  : 0;
+		display      : block;
+		margin-top   : -10px;
 	}
 	
 }
@@ -221,17 +253,17 @@ a:hover {
 #myModal {
 	position : absolute;
 	z-index  : 2050;
-	width  : 100%;
-	height : 100%;
+	width    : 100%;
+	height   : 100%;
 
 }	
 .modal-dialog {
-	position : relative;
+	position         : relative;
 	width            : 600px;
-	margin           : 60px auto;
+	margin           : 40px auto;
 	background-color : #fff;
 	border-radius    : 6px;
-	box-shadow: 10px 10px 30px #282828;
+	box-shadow       : 10px 10px 30px #282828;
 }
 .overlay {
 	position : absolute;
@@ -262,6 +294,27 @@ a:hover {
 	opacity: .2;
 	margin-right: 15px;
 	margin-top: 10px;
+}
+
+.logo-header {
+	font-family : Arial;
+	font-weight : 900;
+	color       : #F5FF00;
+	font-size   : 23px;   
+}
+
+.logo-sub {
+	color        : #FFF;
+	font-family  : Times New Roman;
+	font-weight  : 600;
+	padding-left : 64px;
+	line-height  : 0;
+	display      : block;
+	margin-top   : -10px;
+}
+
+.logo-sub:hover, .logo-header:hover {
+	text-decoration: none;
 }
 
 
@@ -296,9 +349,17 @@ a:hover {
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button> -->
-	      <a class="navbar-brand" href="#">
-			<img src="http://i66.photobucket.com/albums/h243/Dmc69/banner_nuat.png" alt="" height="50">
+	      <a class="navbar-brand">
+	      	<span class="logo-header">
+	      		NUAT THAI TALAMBAN
+	      	</span>
+	      	
+	      	<span class="logo-sub">Foot & Body Massage</span>
+
 	      </a>
+	      <!-- <a class="navbar-brand" href="#">
+			<img src="http://i66.photobucket.com/albums/h243/Dmc69/banner_nuat.png" alt="" height="50">
+	      </a> -->
 	    </div>
 
 	  </div><!-- /.container-fluid -->
@@ -449,10 +510,17 @@ a:hover {
 		function showModal () {
 			var overlay = document.getElementById( 'modal-overlay' );
 			var modal = document.getElementById('myModal');
-			console.log('click')
 
 			overlay.classList.add( 'in' );
 			modal.classList.add( 'in' );
+		}
+
+		function closeModal() {
+			var overlay = document.getElementById( 'modal-overlay' );
+			var modal = document.getElementById('myModal');
+
+			overlay.classList.remove( 'in' );
+			modal.classList.remove( 'in' );
 		}
 	</script>
 </body>
